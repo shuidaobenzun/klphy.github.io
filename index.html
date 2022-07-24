@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>KLP知名用户查询网站</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .jza {
+            text-align: center;
+        }
+        .lja
+        {
+            text-decoration:none;
+        }
+        .bz
+        {
+        color:#F435FEFF;
+        }
+        .gly
+        {
+        color:red;
+        }
+    </style>
+</head>
+<body>
+<!--用户搜索-->
+    <script type="text/javascript">
+    function onSearch(obj){
+        var storeId = document.getElementById('table table-name');
+        var rowsLength = storeId.rows.length;
+        var key = obj;
+        var searchCol = 0;
+        for(var i=1;i<rowsLength;i++){
+            var searchText = storeId.rows[i].cells[searchCol].innerText;
+            if(searchText.match(key)){
+                storeId.rows[i].style.display='';
+            }else{
+                storeId.rows[i].style.display='none';
+            }
+        }   
+    }
+    </script>
+    
+    <style>
+    @media screen and (max-width:600px){
+        .mba{
+            display: none;
+        }
+        .mbb{
+            display: none;
+        }
+    @media screen and (min-width:600px) and (max-width:960px){
+        .mba {
+            display: block;
+        }
+        .mbb {
+            display: none;
+        }
+    @media screen and (min-width:960px){
+        .mba{
+            display: block;
+        }
+        .mbb{
+            display: block;
+        }
+    }
+    </style>
+   
+        </div>
+    </div>
+<div class="container mt-3">
+<h3><i class="fa fa-address-card"></i>KLP知名用户查询网站</h3>
+ 
+
+<div id="Table" class="d-flex border-bottom mt-2 mb-2"></div>
+    <div class="input-group mb-2">
+        <input type="text" class="form-control" style="border-radius:.25rem 0rem 0rem .25rem" id="key" placeholder="输入用户名" aria-describedby="button-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" style="border-radius:0rem .25rem .25rem 0rem" type="button" onclick="document.getElementById('key').value='';onSearch();"id="button-addon2"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <button class="btn btn-outline-success" type="button" onclick="onSearch(document.getElementById('key').value)" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i> 搜索</button>
+ </div>
+ </div>
+ <hr>
+ <h3>用户信息：</h3>
+            <div>
+             <div style="overflow-x:scroll;white-space:nowrap;">
+            <table id="table table-name" class="table table-bordered">
+    <thead>
+        <tr>
+                <th>用户名</th>
+                <th>用户组</th>
+                <th>UUID</th>
+                <th>注册时间</th>
+                <th>用户首页</th>
+                <th>曾用ID</th>
+                <th>具体介绍</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>苦力怕纸</td>
+    <td class="gly">管理员</td>
+    <td>1</td>
+    <td>2020-3-3 13:01</td>
+    <td class="jza"><a id="shuidaoklp" class="shadow-sm btn btn-outline-success" href="https://klpbbs.com/?1"><span class="mbb">前往&nbsp;</span><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    <td>小蛇菌、苦力怕纸亖、chinaklp</td>
+     <td class="jza"><a id="shuidao" class="shadow-sm btn btn-outline-success" href="klp.html"><span class="mbb">打开&nbsp;</span><i class="fa fa-desktop" aria-hidden="true"></i></a></td>
+     </tr>
+     <tr>
+    <td>VioletTec</td>
+    <td class="gly">管理员</td>
+    <td>10341</td>
+    <td>2020-8-5 20:05</td>
+    <td class="jza"><a id="shuidaoklp" class="shadow-sm btn btn-outline-success" href="https://klpbbs.com/?10341"><span class="mbb">前往&nbsp;</span><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    <td>无</td>
+     <td class="jza"><a id="shuidao" class="shadow-sm btn btn-outline-success" href="VioletTec.html"><span class="mbb">打开&nbsp;</span><i class="fa fa-desktop" aria-hidden="true"></i></a></td>
+     </tr>
+     
+    <tr>
+    <td>水稻本尊</td>
+    <td class="bz">版主</td>
+    <td>14351</td>
+    <td>2020-9-12 20:34</td>
+    <td class="jza"><a id="shuidaoklp" class="shadow-sm btn btn-outline-success" href="https://klpbbs.com/home.php?mod=space&uid=14351&do=profile&mobile=2"><span class="mbb">前往&nbsp;</span><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    <td>无</td>
+     <td class="jza"><a id="shuidao" class="shadow-sm btn btn-outline-success" href="shuidao.html"><span class="mbb">打开&nbsp;</span><i class="fa fa-desktop" aria-hidden="true"></i></a></td>
+     </tr>
+     
+       <tr>
+    <td>Berserker243</td>
+    <td class="bz">版主</td>
+    <td>346956</td>
+    <td>2022-4-2 22:04</td>
+    <td class="jza"><a id="Berserker243klp" class="shadow-sm btn btn-outline-success" href="https://klpbbs.com/home.php?mod=space&uid=346956&do=profile&mobile=2"><span class="mbb">前往&nbsp;</span><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    <td>"muyu_fxiaold" "迷离fyx" "迷灬离" "离" "覛灬离"<br>"Devanaoi" "离" "Jnai.243"
+ "满船清梦丶" "念" "望"</td>
+  <td class="jza"><a id="Berserker243" class="shadow-sm btn btn-outline-success" href="Berserker243.html"><span class="mbb">打开&nbsp;</span><i class="fa fa-desktop" aria-hidden="true"></i></a></td>
+     </tr>
+     <tr>
+    <td>饭团团</td>
+    <td class="bz">版主</td>
+    <td>237805</td>
+    <td>2022-1-22 18:51</td>
+    <td class="jza"><a id="fttklp" class="shadow-sm btn btn-outline-success" href="https://klpbbs.com/home.php?mod=space&uid=237805&do=profile&mobile=2"><span class="mbb">前往&nbsp;</span><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+    <td>不知道</td>
+  <td class="jza"><a id="ftt" class="shadow-sm btn btn-outline-success" href="ftt.html"><span class="mbb">打开&nbsp;</span><i class="fa fa-desktop" aria-hidden="true"></i></a></td>
+     </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
